@@ -2,9 +2,11 @@ package com.rchyn.to_doapp.data.repositories
 
 import com.rchyn.to_doapp.data.ToDoDao
 import com.rchyn.to_doapp.data.models.ToDoTask
+import dagger.hilt.android.scopes.ViewModelScoped
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
+@ViewModelScoped
 class ToDoRepository @Inject constructor(
     private val toDoDao: ToDoDao
 ) {
